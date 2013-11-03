@@ -1,0 +1,11 @@
+package com.example.plantrack;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class Planner extends Activity {
+   public void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.planner_layout);
+   }
+}
