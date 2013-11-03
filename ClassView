@@ -1,0 +1,38 @@
+package com.example.plantrack;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+public class ClassView extends LinearLayout {
+	private Class cls;
+	
+	public ClassView(Context context, Class cl) {
+		super(context);
+		LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		inflater.inflate(R.layout.class_view, this, true);
+		setClass(cl);
+	}
+	public String getClassTitle(){
+		return this.cls.getTitle();
+	}
+	/**
+	 * Mutator method for changing the Joke object this View displays. This View
+	 * will be updated to display the correct contents of the new Joke.
+	 * 
+	 * @param joke
+	 *            The Joke object which this View will display.
+	 */
+	public void setClass(Class cl) {
+		this.cls = cl;
+		this.cls.setTitle(cl.getTitle());
+		this.cls.setCategory(cl.getCategory());
+		this.cls.setPercent(cl.getPercent());
+		
+		requestLayout();
+	}
+
+}
