@@ -2,6 +2,7 @@ package com.example.plantrack;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -9,11 +10,13 @@ import android.widget.TextView;
 
 public class ClassView extends LinearLayout {
 	private Class cls;
+	private Button classButton;
 	
 	public ClassView(Context context, Class cl) {
 		super(context);
 		LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.class_view, this, true);
+		this.classButton = (Button) findViewById(R.id.class_title_button);
 		setClass(cl);
 	}
 	public String getClassTitle(){
@@ -29,9 +32,7 @@ public class ClassView extends LinearLayout {
 	public void setClass(Class cl) {
 		this.cls = cl;
 		this.cls.setTitle(cl.getTitle());
-		this.cls.setCategory(cl.getCategory());
-		this.cls.setPercent(cl.getPercent());
-		
+		this.classButton.setText(cl.getTitle());
 		requestLayout();
 	}
 
