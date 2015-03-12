@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -15,18 +15,26 @@
         android:theme="@style/Theme.Sherlock" >
         <activity
             android:name="com.example.plantrack.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name= ".Planner" />
-        <activity android:name = ".Grades" />
-        <activity android:name = ".Gpa" />
-        <activity android:name = ".AddClassView" />
-        <activity android:name = ".ItemView" />
+         <provider 
+            android:name="com.example.plantrack.GradesContentProvider"
+            android:authorities="com.example.plantrack.contentprovider" >
+        </provider>
+        <activity android:name=".Planner" />
+        <activity android:name=".Grades" />
+        <activity android:name=".Gpa" />
+        <activity android:name=".AddClassView" />
+        <activity android:name=".AddItemView" />
+        <activity android:name=".ListOfItems" />
+        <activity android:name=".EditClass"/> 
         
         
 

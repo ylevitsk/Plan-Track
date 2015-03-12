@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:focusable="false"
+	android:focusableInTouchMode="false"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:focusable="false"
+		android:focusableInTouchMode="false"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	<TextView
+    	    android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:layout_weight="1"
+        	android:focusable="false"
+        	android:focusableInTouchMode="false"
+        	android:padding="6dp"
+        	android:text="@string/assign_title" />
+
+    	<EditText
+        	android:id="@+id/class_title"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:singleLine="true"
+   		    android:imeOptions="actionDone"
+        	android:hint="@string/title_hint" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+    	android:focusable="false"
+		android:focusableInTouchMode="false"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+        <TextView
+   			android:layout_width="0dp"
+   			android:focusable="false"
+   			android:text="@string/assign_category"
+			android:focusableInTouchMode="false"
+   			android:layout_height="wrap_content"
+   			android:padding="6dp"
+   			android:layout_weight="1"/>
+   		<Spinner
+        	android:id="@+id/spinner1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+    	android:focusable="false"
+		android:focusableInTouchMode="false"
+   		android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+   		<TextView
+   			android:layout_width="wrap_content"
+   			android:focusable="false"
+   			android:text="@string/assign_grade"
+			android:focusableInTouchMode="false"
+   			android:layout_height="wrap_content"
+   			android:padding="6dp"
+   			android:layout_weight="1"/>   
+   		<EditText
+    		android:id="@+id/class_grade"
+       		android:layout_width="wrap_content"
+       		android:digits="0123456789."
+       		android:inputType="numberDecimal"
+       		android:hint = "@string/grade_hint"
+       		android:singleLine="true"
+   		    android:imeOptions="actionDone"
+       		android:layout_height="wrap_content"
+       		android:ems="10" >
+       		<requestFocus />
+  	 	</EditText>
+	</LinearLayout>
+   	<Button
+        android:id="@+id/addItButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_height="wrap_content"
+        android:text="@string/item_add" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Plan&amp;Track</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint">Add Class Title</string>
+    <string-array name="cat_array">
+        <item >Tests</item>
+        <item >Projects</item>
+        <item >Homework</item>
+    </string-array>
+    <string name="assign_title">Title</string>
+    <string name="assign_category">Category</string>
+    <string name="assign_grade">Grade (%)</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="title_hint">Enter assign. name</string>
+    <string name="category_hint">Enter assign. category</string>
+    <string name="grade_hint">Enter assign. grade</string>
+    <string name="item_add">Add Item</string>
+    <string name="class_add">Add</string>
+    <string name="gpa_grade">Grade (%)</string>
+    <string name="gpa_units">Units</string>
+    <string name="gpa_grade_hint">Enter grade</string>
+    <string name="gpa_units_hint">Enter units</string>
+    <string name="gpa_add_class">Add Grade</string>
+	<string name="grades_gpa">GPA</string>
+	<string name="gpa_class_hint">Enter class name</string>
+	<string name="gpa_class">Class Name</string>
+
+</resources>

@@ -13,7 +13,7 @@ import android.widget.BaseAdapter;
 /**
  * This class binds the visual JokeViews and the data behind them (Jokes).
  */
-public class classAdapter extends BaseAdapter{
+public class ClassAdapter extends BaseAdapter{
 
 	/** The application Context in which this JokeListAdapter is being used. */
 	private Context m_context;
@@ -34,7 +34,7 @@ public class classAdapter extends BaseAdapter{
 	 *            The Collection of Joke objects to which this JokeListAdapter
 	 *            is bound.
 	 */
-	public classAdapter(Context context, List<Class> classList) {
+	public ClassAdapter(Context context, List<Class> classList) {
 		this.m_context = context;
 		this.classList = classList;
 	}

@@ -20,7 +20,7 @@ public class GradeClassAdapter extends BaseAdapter{
 	private Context m_context;
 
 	/** The data set to which this JokeListAdapter is bound. */
-	private List<Item> classList;
+	private List<Item> gpaList;
 
 	/**
 	 * Parameterized constructor that takes in the application Context in which
@@ -36,19 +36,19 @@ public class GradeClassAdapter extends BaseAdapter{
 	 *            The Collection of Joke objects to which this JokeListAdapter
 	 *            is bound.
 	 */
-	public GradeClassAdapter(Context context, List<Item> classList) {
+	public GradeClassAdapter(Context context, List<Item> gpaList) {
 		this.m_context = context;
-		this.classList = classList;
+		this.gpaList = gpaList;
 	}
 
 	@Override
 	public int getCount() {
-		return this.classList.size();
+		return this.gpaList.size();
 	}
 
 	@Override
 	public Object getItem(int position) {
-		return this.classList.get(position);
+		return this.gpaList.get(position);
 	}
 
 	@Override

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/newClassEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:hint="@string/hint" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="Projects" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.62"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_projects"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="2.53"
+            android:digits="0123456789"
+            android:ems="10"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="Midterms" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_midterms"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:digits="0123456789"
+            android:ems="10"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.09"
+            android:text="Homework" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.95"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_hw"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="number"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:text="0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Final" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.86"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_final"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.46"
+            android:digits="0123456789"
+            android:ems="10"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quizzes" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.87"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_quizzes"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:digits="0123456789"
+            android:ems="10"
+            android:singleLine="true"
+   		    android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:text="Labs" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.13"
+            android:text="Weight" />
+
+        <EditText
+            android:id="@+id/weight_labs"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1.98"
+            android:singleLine="true"
+   		    android:imeOptions="actionDone"
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addClassButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/class_add" />
+
+</LinearLayout>
